@@ -68,13 +68,15 @@ header {
 }
 
 .menu nav>ul li:hover .submenu {
-    display: block;
+    /* display: block; */
+    opacity: 1;
+    z-index: 1;
 
 }
 
 .menu .submenu {
-    display: none;
-    transition: 1s;
+    /* display: none; */
+    transition: 1s ease-in-out;
     position: absolute;
     top: 40px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
@@ -82,8 +84,8 @@ header {
     width: 200px;
     padding: 10px;
     border-radius: 10px;
-    z-index: 1;
-
+    z-index: -1;
+    opacity: 0;
 }
 
 .menu .submenu li {
@@ -111,6 +113,11 @@ header {
     background: none;
     outline: 0;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.menu form button:hover {
+    color: #0bdceb;
 }
 
 .menu img {
@@ -131,7 +138,7 @@ header {
     color: #00a1ad;
     margin: 0 3px;
     text-decoration: none;
-    transition: 1s;
+    transition: 0.5s;
 
 }
 
@@ -159,7 +166,7 @@ header {
     cursor: pointer;
     left: 20px;
     border-radius: 50%;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .banner .slider .arrow-right {
@@ -171,17 +178,21 @@ header {
     cursor: pointer;
     right: 20px;
     border-radius: 50%;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .banner .slider .arrow-left:hover {
     background: url(../images/left1.png)no-repeat center center, rgba(255, 255, 0, 1);
     background-size: cover;
+    width: 49px;
+    height: 49px;
 }
 
 .banner .slider .arrow-right:hover {
     background: url(../images/right.png)no-repeat center center, rgba(255, 255, 0, 1);
     background-size: cover;
+    width: 49px;
+    height: 49px;
 }
 
 .banner .slider .photo {
