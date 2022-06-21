@@ -59,10 +59,17 @@ header {
     position: relative;
 }
 
+.menu nav>ul li a:hover {
+    background: #0bdceb;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 .menu nav>ul li a {
     text-decoration: none;
     color: #000;
     font-size: 1.25vw;
+    transition: 0.5s;
 }
 
 .menu nav>ul li:hover .submenu {
@@ -120,9 +127,9 @@ header {
 
 .menu img {
     position: absolute;
-    width: 200px;
+    width: 180px;
     right: 20px;
-    bottom: -25px;
+    bottom: -20px;
 }
 
 /* sociale icon  */
@@ -255,6 +262,7 @@ header {
 .content section article img {
     border-radius: 50%;
     height: 70px;
+    margin-right: 5px;
 }
 
 .content section article p {
@@ -328,6 +336,7 @@ header {
 }
 
 .right .wrap-title .title p {
+    /* font-size: 1.1vw; */
     font-size: 14px;
 }
 
@@ -347,7 +356,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
+    font-size: 1.1vw;
+    /* font-size: 14px; */
 }
 
 .right .wrap-title .title .bottom span {
@@ -448,10 +458,14 @@ footer nav ul li a {
     justify-content: center;
     align-items: center;
     height: 100%;
+    transition: 0.5s;
 }
 
 footer nav ul li a:hover {
     background: #0ad3e9;
+    border-radius: 5px;
+    margin: 0 2px;
+
 }
 
 footer .titles {
